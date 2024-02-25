@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        const user = prompt("Enter The Item You Want To 1.Shirt 2.Pent 3.Trouser 4.Shawl")
+        const user = prompt("Enter The Item You Want To wear 1.Shirt 2.Pent 3.Trouser 4.Shawl")
 if(user==1){
     const shirt =prompt("Please mention the size of the Shirt Which you want to wear 1.Small 2.Medium 3.Large 4.XLarge 5.XXLarge")
     if(shirt==1){
@@ -54,19 +54,86 @@ else if(user==2){
 else if(user==3){
     const trouser=prompt("Please mention the size of the trouser Which you want to wear 1.Short 2.Regular 3.Long")
     if(trouser==1){
-        alert("The size of your Pent is 38-40 Inches")
+        alert("The size of your trouser is 38-40 Inches")
 
     }
     else if(trouser==2){
-    alert("The size of your Pent is 38 Inches and 76 CM")
-}
-  else if(trouser==2){
-    alert("The size of your Pent is 32 Inches 81 CM")
-}
-else if(trouser==3){
-    alert("The size of your Pent is 34 Inches 86 CM")
+    alert("The size of your trouser is 38 Inches and 76 CM")
 }
 
+else if(trouser==3){
+    alert("The size of your trouser is 34 Inches 86 CM")
+}
+
+}
+else if(user==4){
+    const shawl=prompt("Please mention the Color and brand of hte shawl 1.J.(Blue or Black) 2.Khaddi(Blue or black) 3.Sana Safinaz(Blue or Black)")
+    if(shawl==1){
+        alert("Yes we have a J. shawl in variety")
+        const stock=prompt("Please enter the color 1.Blue 2.black")
+        if(stock==1){
+        alert("You have to pay only 1000PKR for J. Blue shawl")
+        const discount=prompt("If you want to get discount Please write yes here")
+            if(discount=="yes"){
+            alert("Now you have to pay only 800PKR")
+        }
+    }
+    else if(stock==2){
+        alert("You have to pay only 2000PKR for J. Black shawl")
+        const discount=prompt("If you want to get discount Please write yes here")
+            if(discount=="yes"){
+            alert("Now you have to pay only 1800PKR")
+        }
+    }
+
+    }
+  
+    if(shawl==2){
+        alert("Yes we have a only 50% stock in Khaadi variety")
+        const stock=prompt("Please enter the color 1.Blue 2.black")
+        if(stock==1){
+        alert("You have to pay only 1500PKR for Khaadi Blue shawl")
+        const discount=prompt("If you want to get discount Please write yes here")
+            if(discount=="yes"){
+            alert("Now you have to pay only 1300PKR")
+        }
+    }
+    else if(stock==2){
+        alert("You have to pay only 2000PKR for Khaadi Black shawl")
+        const discount=prompt("If you want to get discount Please write yes here")
+            if(discount=="yes"){
+            alert("Now you have to pay only 1800PKR")
+        }
+    }
+
+    }
+
+    if(shawl==3){
+        alert("Yes we have a only 40% stock in Sana Safinaz variety")
+        const stock=prompt("Please enter the color 1.Blue 2.black")
+        if(stock==1){
+        alert("You have to pay only 1200PKR for Sana Safinaz Blue shawl")
+        const discount=prompt("If you want to get 20% discount Please write yes here")
+            if(discount=="yes"){
+            alert("Now you have to pay only 1000PKR")
+        }
+        
+    }
+    else if(stock==2){
+        alert("You have to pay only 1800PKR for Sana Safinaz Black shawl")
+        const discount=prompt("If you want to get discount Please write yes here")
+            if(discount=="yes"){
+            alert("Now you have to pay only 1600PKR")
+        }
+    }
+
+    }
+   
+}
+
+
+else{
+    alert("Invalis selection/Please select from the defined no ")
 }
     </script>
    
